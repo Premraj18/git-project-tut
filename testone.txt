@@ -4,3 +4,5 @@ git status
 git commit -m "message"
 git log // show the commit id and its related 
 git blame index.js //it show what changes is done by which user 
+git reset --hard commit id // where we want to shift the head
+git revert commit id
