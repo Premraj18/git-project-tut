@@ -8,3 +8,7 @@ git blame index.js //it show what changes is done by which user
 git reset --hard commit id // where we want to shift the head
 git revert commit id
 git push -f // to remove the changes
+Undo last commit but keep changes staged	 git reset --soft HEAD~1	    ✅ Yes (staged)
+Undo last commit but keep changes unstaged	 git reset --mixed HEAD~1	    ✅ Yes (unstaged)
+Undo last commit and delete changes	         git reset --hard HEAD~1	    ❌ No
+Undo pushed commit safely	                 git revert HEAD	            ✅ Yes
